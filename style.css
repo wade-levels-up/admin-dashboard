@@ -1,9 +1,35 @@
+/* Global settings */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
 }
+
+
+@font-face {
+    font-family: 'artisan';
+    src: url('./fonts/webfontkit-20240920-191226/artisan12-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20240920-191226/artisan12-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+:root {
+    font-family: artisan, system-ui;
+    --color-theme-1: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-theme-1);
+}
+
+
+/* Main Layout */
 
 body {
     display: grid;
@@ -26,4 +52,38 @@ aside {
     background-color: cadetblue;
     grid-column: 1;
     grid-row: 1 / -1;
+}
+
+/* Sub Layouts */
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    color: var(--color-theme-1);
+}
+
+.side-nav ul {
+    display: grid;
+    list-style: none;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.flex-centred {
+    display: flex;
+    align-content: center;
+}
+
+.nav-icon {
+    fill: var(--color-theme-1);
+    width: 1rem;
+    margin-right: 10px;
+}
+
+.nav-icon-lrg {
+    fill: var(--color-theme-1);
+    width: 2rem;
+    margin-right: 10px;
 }
