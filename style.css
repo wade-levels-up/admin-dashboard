@@ -48,7 +48,11 @@ body {
 header {
     background-color: var(--color-theme-1);
     grid-column: 2 / -1;
+ 
     grid-row: 1;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 20px;
+    padding: 20px;
 }
 
 main {
@@ -65,6 +69,37 @@ aside {
 }
 
 /* Sub Layouts */
+
+    /* Header */
+
+    .header-main {
+        display: grid;
+        grid-template-columns: 150px 6fr 4fr;
+        gap: 20px;
+    }
+
+    .header-main img {
+        justify-self: end;
+        border: 2px solid blue;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .header-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-buttons button {
+        padding: 5px 15px 5px 15px;
+        background-color: var(--color-theme-3);
+        border-radius: 15px;
+        border: outset var(--color-theme-3);
+        min-width: 80px;
+    }
+
+    .header-main h1 { font-size: 1.5rem;}
 
     /* Aside */
 
