@@ -216,8 +216,8 @@ main {
                 display: grid;
                 grid-template: 1fr / 3fr 1fr;
                 grid-template-areas:
-                    'projects announce'
-                    'projects announce'
+                    'projects main-side'
+                    'projects main-side'
                 ;
                 height: 100%;
                 padding: 20px 20px 80px 20px;
@@ -231,8 +231,8 @@ main {
             }
 
             .projects { grid-area: projects;}
-            .announcements { grid-area: announce;}
-            .trending {grid-area: announce;}
+            .announcements { grid-area: main-side;}
+            .trending {grid-area: main-side;}
 
             .card-section {
                 display: grid;
