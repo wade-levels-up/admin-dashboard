@@ -48,8 +48,9 @@ body {
 header {
     background-color: var(--color-theme-1);
     grid-column: 2 / -1;
- 
     grid-row: 1;
+
+    display: grid;
     grid-template-rows: 1fr 2fr;
     row-gap: 20px;
     padding: 20px;
@@ -80,7 +81,7 @@ aside {
 
     .header-main img {
         justify-self: end;
-        border: 2px solid blue;
+        border: 2px solid var(--color-theme-4);
         border-radius: 50%;
         overflow: hidden;
     }
@@ -97,9 +98,36 @@ aside {
         border-radius: 15px;
         border: outset var(--color-theme-3);
         min-width: 80px;
+        cursor: pointer;
     }
 
     .header-main h1 { font-size: 1.5rem;}
+
+    .header-nav {
+        display: grid;
+        grid-template-columns: 6fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .header-nav input {
+        width: 80%;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+
+    .header-nav button { 
+        border: none; background-color: 
+        var(--color-theme-1); 
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+    }
+
+    .header-nav img {
+        border: 2px solid var(--color-theme-4);
+        border-radius: 50%;
+        overflow: hidden;
+    }
 
     /* Aside */
 
