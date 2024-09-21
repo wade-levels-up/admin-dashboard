@@ -26,9 +26,22 @@
     --color-theme-5: rgb(39, 29, 24);
 }
 
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        font-family: artisan, system-ui;
+        --color-theme-1: rgb(43, 41, 72);
+        --color-theme-2: rgb(255, 255, 255);
+        --color-theme-3: rgb(43, 34, 56);
+        --color-theme-4: rgb(255, 255, 255);
+        --color-theme-5: rgb(35, 36, 52);
+        color: whitesmoke;
+        fill: white;
+    }
+}  */
+
 a {
     text-decoration: none;
-    color: var(--color-theme-1);
+    color: var(--color-theme-2);
 }
 
 h1,h2,h3,h4,h5,h6,strong {
@@ -105,7 +118,7 @@ aside {
 
     .header-nav {
         display: grid;
-        grid-template-columns: 6fr 1fr 1fr 1fr;
+        grid-template-columns: 6fr 0.4fr 0.4fr 1fr 1fr;
         align-items: center;
     }
 
@@ -123,6 +136,11 @@ aside {
         height: 15px;
     }
 
+    .header-nav button:hover {
+        transition: ease-in-out 1s;
+        transform: scale(1.5);
+    }
+
     .header-nav img {
         border: 2px solid var(--color-theme-4);
         border-radius: 50%;
@@ -136,7 +154,7 @@ aside {
             flex-direction: column;
             gap: 50px;
             padding: 20px;
-            color: var(--color-theme-1);
+            color: var(--color-theme-2);
         }
 
         .side-nav ul {
@@ -152,13 +170,13 @@ aside {
         }
 
         .nav-icon {
-            fill: var(--color-theme-1);
+            fill: var(--color-theme-2);
             width: 1rem;
             margin-right: 10px;
         }
 
         .nav-icon-lrg {
-            fill: var(--color-theme-1);
+            fill: var(--color-theme-2);
             width: 2rem;
             margin-right: 10px;
         }
