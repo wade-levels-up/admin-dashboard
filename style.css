@@ -20,7 +20,11 @@
 
 :root {
     font-family: artisan, system-ui;
-    --color-theme-1: white;
+    --color-theme-1: rgb(255, 243, 234);
+    --color-theme-2: rgb(0, 0, 0);
+    --color-theme-3: rgb(255, 119, 0);
+    --color-theme-4: rgb(43, 43, 43);
+    --color-theme-5: rgb(39, 29, 24);
 }
 
 a {
@@ -37,19 +41,20 @@ body {
 }
 
 header {
-    background-color: brown;
+    background-color: var(--color-theme-1);
     grid-column: 2 / -1;
     grid-row: 1;
 }
 
 main {
-    background-color: bisque;
+    background-color: var(--color-theme-5);
+    color: var(--color-theme-1);
     grid-column: 2 / -1;
     grid-row: 2;
 }
 
 aside {
-    background-color: cadetblue;
+    background-color: var(--color-theme-3);
     grid-column: 1;
     grid-row: 1 / -1;
 }
